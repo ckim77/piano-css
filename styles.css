@@ -1,0 +1,42 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+#piano {
+    background-color: orangered;
+    width: 992px;
+    height: 290px;
+    margin: 80px auto;
+    padding: 90px 20px 0 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.keys {
+    background-color: black;
+    width: 949px;
+    height: 180px;
+    padding-left: 2px;
+}
+
+.key {
+    background-color: white;
+    position: relative;
+    width: 41px;
+    height: 175px;
+    margin: 2px;
+    float: left;
+}
+
+.key.black-key::after {
+    background-color: black;
+    content: "";
+    position: absolute;
+    left: -18px;
+    width: 32px;
+    height: 100px;
+}
